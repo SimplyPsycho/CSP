@@ -18,3 +18,17 @@ def report_grade(percent):
     else:
         print('A grade of', percent, ' does not indicate mastery.')
         print('Seek extra practice or help')
+        
+def vowel(letter):
+    vowels = 'aeiouAEIOU'
+    if letter in vowels:
+        return True
+    else:
+        return False
+# should check len(letter)==1
+
+def letter_in_word(guess, word):
+    if guess in word:
+        return True
+    else:
+        return False
