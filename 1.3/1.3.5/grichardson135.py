@@ -3,8 +3,17 @@ def how_eligible(essay):
     if '?' in essay:
         number = number + 1
     else:
-        
+        number = number + 0
     if '"' in essay:
         number = number + 1
     else:
         number = number + 0
+    if ',' in essay:
+        number = number + 1
+    else:
+        number = number + 0
+    if '!' in essay:
+        number = number + 1
+    else:
+        number = number + 0
+    return number
