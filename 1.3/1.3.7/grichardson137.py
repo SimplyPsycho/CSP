@@ -31,14 +31,10 @@ def dice(n):
     print(a)
     
 def matches(ticket, winners):
-    ticket = str()
-    winners = str()
-    a = ticket[0]
-    b = ticket[1]
-    c = ticket[2]
     n = 0
-    print(b)
-    if ticket[0:] in winners[0:]:
-        
-    else:
-        print(n)
+    for num in ticket:
+        if num in winners:
+            n += 1
+        else:
+            n += 0
+    print(n)
