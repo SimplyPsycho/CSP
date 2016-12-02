@@ -28,6 +28,18 @@ def guess_winner(players=('Amy', 'Bill', 'Cathy', 'Dale')):
 
 def goguess():
     number = random.randint(1, 20)
-    guess = 0
-    while guess != number:
-        if guess >
+    guesses = 0
+    print('Guess a number between 1 and 20 inclusive.')
+    while raw_input(1) != number:
+        guess = raw_input(1)
+        guesses += 1
+        if guess > 20:
+            print(guess,' is too high, Try Again')
+        else:
+            return
+        if guess < 1:
+            print(guess,' is too low, Try Again')
+        else:
+            return
+    print('Right! My number is ', number, ' You guessed in ', guesses, ' guesses!')
+    
